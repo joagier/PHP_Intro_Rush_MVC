@@ -2,10 +2,10 @@
 
 Class DB {
 
-	public  static function connectDB()
+	public function connectDB()
 	{
 	    try {
-	        $pdo = new PDO('mysql:dbname=todo_php;host=localhost', 'root', '');
+	        $pdo = new PDO('mysql:dbname=todo_php;host=localhost', 'root', 'Echarcon91!');
 	        return $pdo;
 	    } catch (PDOException $e) {
 	        echo "PDO ERROR: " . $e->getMessage() . "\n";
