@@ -1,6 +1,6 @@
 <?php
 
-include_once ("../Db.php");
+include_once (dirname(__FILE__) . '/../Db.php');
 
 class Task {
   public function __construct()
